@@ -1,0 +1,180 @@
+/*FONTS WORKING WITH CRHOME ONLY*/
+@font-face {
+  font-family: myAileronsFont;
+  src: url(../typefonts/Ailerons-Typeface.otf);
+}
+
+@font-face {
+  font-family: myTrackFont;
+  src: url(../typefonts/Track.otf);
+}
+
+@font-face {
+  font-family: myCornerstoneFont;
+  src: url(../typefonts/Cornerstone.ttf);
+}
+
+body {
+  /* top, transparent red, faked with gradient */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  /* bottom, image */
+  url(../img/office-wallpaper-9.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* INDEX PAGE */
+#indexLogo {
+	position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	outline: .25vw solid white;
+	outline-offset: 3vw;
+	font-family: myAileronsFont;
+	font-size: 3vw;
+}
+
+#indexLogo a{
+  color: white;
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+#navibar, #navibarBurger{
+  font-family: myAileronsFont;
+}
+
+.showcase {
+  /*height: 600px;*/
+  margin-top: 25px;
+  padding: 150px 100px;
+  color: white;
+}
+
+.showcase h1{
+  font-size: 90px;
+  font-weight: 900;
+  font-family: myAileronsFont;
+}
+
+.showcase hr{
+  width:200px;
+  margin: auto;
+  border-width: 5px;
+  border-color: red;
+}
+
+.showcase p {
+  font-size: 30px;
+  font-family: myCornerstoneFont;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.typedElement{
+  font-size: 30px;
+  font-family: myCornerstoneFont;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#about button{
+  font-size: 30px;
+  font-weight: 900;
+  font-family: myAileronsFont;
+}
+
+.sectionGap{
+  height: 100px;
+}
+
+.section{
+  font-size: 20px;
+  font-family: myCornerstoneFont;
+  text-align: justify;
+  padding: 40px 0;
+}
+
+.section h2{
+  font-size: 45px;
+  font-weight: 900;
+  font-family: myAileronsFont;
+  padding: 0;
+  margin: 0;
+}
+
+.section h3{
+  font-size: 25px;
+  font-weight: 900;
+  font-family: myAileronsFont;
+  text-align: center;
+}
+
+#contactButton{
+  font-size: 35px;
+  font-family: myAileronsFont;
+}
+
+.section form{
+  font-family: myAileronsFont;
+}
+
+#footbar{
+  font-family: myAileronsFont;
+}
+
+#locationAndWeath{
+  font-family: myCornerstoneFont;
+}
+
+#footbar hr{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /*body{
+    margin-top: 200px;
+  }*/
+
+  .showcase{
+    /*height: 750px;*/
+    padding: 120px 0;
+  }
+
+  #locationAndWeath{
+    padding: 20px 75px;
+  }
+
+  #footbar hr{
+    width: 300px;
+    margin: auto;
+    border-width: 3px;
+    border-color: red;
+    display: block;
+  }
+}
