@@ -12,22 +12,22 @@ function burgerFunction() {
     var b = window.baffle('h1',
       {
         characters: '▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒ AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz~!@#$%^&*()-+=[]{}|;:,./<>?',
-        speed: 70
+        speed: 60
     });
     b.start().once().reveal(1500, 1500);
 
 //TEXT TYPING TRANSITIONS
 document.addEventListener("DOMContentLoaded", function(){
   Typed.new(".typedElement", {
-      strings: ["Arch Draftsman","CAD Designer","Programmer", "Web Developer"],
+      strings: ["Software Developer","CAD Designer"],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
-      typeSpeed: 50,
+      typeSpeed: 40,
       // time before typing starts
       startDelay: 2800,
       // backspacing speed
-      backSpeed: 0,
+      backSpeed: 30,
       // shuffle the strings
       shuffle: false,
       // time before backspacing
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
       // show cursor
       showCursor: true,
       // character for cursor
-      cursorChar: " " + '<i class="fa fa-terminal w3-xxlarge w3-text-yellow"></i>',
+      cursorChar: "" + '<i class="fa fa-terminal w3-xxlarge w3-text-yellow"></i>',
       // attribute to type (null == text)
       attr: null,
       // either html or text
