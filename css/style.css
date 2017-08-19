@@ -14,6 +14,8 @@
   src: url(../typefonts/Cornerstone.ttf);
 }
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
 body {
   /* top, transparent red, faked with gradient */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -50,35 +52,35 @@ body {
 .showcase {
   /*height: 600px;*/
   margin-top: 25px;
-  padding: 150px 100px;
+  padding: 75px 100px;
   color: white;
 }
 
 .showcase h1{
-  font-size: 90px;
+  font-size: 130px;
   font-weight: 900;
   font-family: myAileronsFont;
+  padding: 20px 0px;
 }
 
 .showcase hr{
-  width:200px;
+  width:450px;
   margin: auto;
   border-width: 5px;
   border-color: red;
 }
 
 .showcase p {
-  font-size: 30px;
+  font-size: 35px;
   font-family: myCornerstoneFont;
   text-align: center;
   padding: 20px 0px;
 }
 
 .typedElement{
-  font-size: 30px;
+  font-size: 35px;
   font-family: myCornerstoneFont;
   text-align: center;
-  padding: 20px 0px;
 }
 
 .typed-cursor{
@@ -87,6 +89,22 @@ body {
     -moz-animation: blink 0.8s infinite;
     animation: blink 0.8s infinite;
 }
+
+.typed-cursor2{
+    padding-top: 75px;
+    opacity: 1;
+    -webkit-animation: blink 2.5s infinite;
+    -moz-animation: blink 2.5s infinite;
+    animation: blink 2.5s infinite;
+}
+
+.typed-cursor3{
+    opacity: 1;
+    -webkit-animation: blink 2.5s infinite;
+    -moz-animation: blink 2.5s infinite;
+    animation: blink 2.5s infinite;
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -116,7 +134,7 @@ body {
 .section{
   font-size: 20px;
   font-family: myCornerstoneFont;
-  text-align: justify;
+  text-align: center;
   padding: 40px 0;
 }
 
@@ -135,9 +153,52 @@ body {
   text-align: center;
 }
 
-#contactButton{
+/*#contactButton{
   font-size: 35px;
   font-family: myAileronsFont;
+}*/
+
+.btnReshape {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: myAileronsFont;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 160px;
+  -webkit-transition: all        1.2s;
+  transition: all        1.2s;
+  white-space: nowrap;
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.btnReshape span {
+  display: inline-block;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  font-weight: normal;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-size: 25px;
+  font-family: myCornerstoneFont;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+}
+
+.btnReshape:hover {
+  text-align: center;
+  width: 400px;
+  /*border: 5px solid #4CAF50;*/
+}
+
+.btnReshape:hover span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .section form{
@@ -163,15 +224,86 @@ body {
 
   .showcase{
     /*height: 750px;*/
-    padding: 120px 0;
+    padding: 100px 0;
+  }
+
+  .showcase h1{
+    font-size: 80px;
+    /*font-weight: 900;*/
+    font-family: myAileronsFont;
+    padding-bottom: 20px;
+  }
+
+  .showcase hr{
+    width:325px;
+    margin: auto;
+    border-width: 5px;
+    border-color: red;
+  }
+
+  .showcase p {
+    font-size: 23px;
+    font-family: myCornerstoneFont;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .typedElement{
+    font-size: 23px;
+    font-family: myCornerstoneFont;
+    text-align: center;
+  }
+
+  .btnReshape {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: myAileronsFont;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 135px;
+    -webkit-transition: all        1.2s;
+    transition: all        1.2s;
+    white-space: nowrap;
+    /*font-family: 'Montserrat', sans-serif;*/
+  }
+
+  .btnReshape span {
+    display: inline-block;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+    font-weight: normal;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 18px;
+    font-family: myCornerstoneFont;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+  }
+
+  .btnReshape:hover {
+    text-align: center;
+    width: 300px;
+    /*border: 5px solid #4CAF50;*/
+  }
+
+  .btnReshape:hover span {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    text-decoration: underline;
   }
 
   #locationAndWeath{
-    padding: 20px 75px;
+    padding: 20px 20px;
+    text-align: center;
   }
 
   #footbar hr{
-    width: 300px;
+    width: 325px;
     margin: auto;
     border-width: 3px;
     border-color: red;
