@@ -25,7 +25,7 @@
 			<div id="navibar"class="w3-bar w3-black w3-xlarge">
 
 				<!-- <a href="" onclick="location.href='index.html';"><span class="logo w3-bar-item w3-white w3-hover-black w3-hover-text-red">AR</span><a> -->
-				<span class="logo w3-bar-item w3-white w3-hover-black w3-hover-text-red">AR</span><a>
+				<span class="logo w3-bar-item w3-white">AR</span><a>
 				<!-- <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a> -->
 				<a href="#body" class="w3-bar-item w3-button w3-green w3-text-white w3-hover-green w3-hover-text-red"><i class="fa fa-home w3-xlarge" ></i></a>
 
@@ -64,22 +64,13 @@
 		</section>
 
 		<!-- WELCOME -->
-		<section id="home" class="section w3-animate-opacity w3-teal">
+		<section id="home" class="section w3-animate-opacity">
 			<div class="w3-container w3-center">
-				<i class="fa fa-home w3-xxlarge"></i>
-				<h2>Welcome</h2>
+				<i class="fa fa-home w3-xxlarge w3-text-white"></i>
+				<h2 class="w3-text-white">Welcome</h2>
 				<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">Hi there and thanks for visiting this space.</br>
           This is still an ongoing project and content will be added in the coming weeks.</br>
           Feel free to browse around, if you have something to say just leave a message in the contact form down below.</p>
-			</div>
-		</section>
-
-		<!-- LETS GET STARTED -->
-		<section id="getStarted" class="section w3-animate-opacity w3-white">
-			<div class="w3-container w3-center">
-				<i class="fa fa-spin fa-cog w3-xxlarge"></i>
-				<h2>Let's Get Started</h2>
-				<p class="w3-text-green">The sections below contain details about me, about services i offer and a portfolio highlighting my work.</p>
 			</div>
 		</section>
 
@@ -88,37 +79,51 @@
 
 		</section>
 
-		<!-- ABOUT & ACCORDIONS-->
-		<section id="about" class="section w3-animate-opacity w3-black">
+		<!-- LETS GET STARTED -->
+		<section id="getStarted" class="section w3-animate-opacity">
 			<div class="w3-container w3-center">
-				<i class="aboutIcon fa fa-user-circle w3-xxlarge"></i>
-				<h2>About</h2>
+				<i class="fa fa-spin fa-cog w3-xxlarge"></i>
+				<h2>Let's Get Started</h2>
+				<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">The sections below contain details about me, about services i offer and a portfolio highlighting my work.</p>
+			</div>
+		</section>
+
+		<!-- GAP -->
+		<!-- <section class="sectionGap">
+
+		</section> -->
+
+		<!-- ABOUT & ACCORDIONS-->
+		<section id="about" class="section w3-animate-opacity">
+			<div class="w3-container w3-center">
+				<i class="aboutIcon fa fa-user-circle w3-xxlarge w3-text-white"></i>
+				<h2 class="w3-text-white">About</h2>
 
 				<div class="w3-row-padding">
 
 					<!-- WHO -->
 					<div class="w3-col">
-						<button onclick="accFunction('accWho')" class="w3-button w3-block w3-center-align w3-white">Who Am I<br> <i class="fa fa-chevron-down w3-xlarge" ></i></button>
+						<button onclick="accFunction('accWho')" class="w3-button w3-block w3-center-align w3-hover-none w3-hover-text-red w3-text-green">Who Am I<br> <i class="fa fa-chevron-down w3-xlarge" ></i></button>
 							<div id="accWho" class="w3-container w3-hide">
 								<!--<h3>I'm Andrea</h3>-->
-								<h3>Coming Soon</h3>
-	  						<p class="w3-text-green">Coming Soon</p>
+								<h3 class="w3-text-white">Coming Soon</h3>
+	  						<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">Coming Soon</p>
 							</div>
 					</div>
 					<!-- WHAT -->
 					<div class="w3-col">
-						<button onclick="accFunction('accWhat')" class="w3-button w3-block w3-center-align w3-white">What I Do<br> <i class="fa fa-chevron-down w3-xlarge" ></i></button>
+						<button onclick="accFunction('accWhat')" class="w3-button w3-block w3-center-align w3-hover-none w3-hover-text-red w3-text-green">What I Do<br> <i class="fa fa-chevron-down w3-xlarge" ></i></button>
 							<div id="accWhat" class="w3-container w3-hide">
-								<h3>Coming Soon</h3>
-	  						<p class="w3-text-green">Coming Soon</p>
+								<h3 class="w3-text-white">Coming Soon</h3>
+	  						<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">Coming Soon</p>
 							</div>
 					</div>
 					<!-- WHERE -->
 					<div class="w3-col">
-						<button onclick="accFunction('accWhere')" class="w3-button w3-block w3-center-align w3-white">Where Am I<br> <i class="fa fa-chevron-down w3-xlarge" ></i></button>
+						<button onclick="accFunction('accWhere')" class="w3-button w3-block w3-center-align w3-hover-none w3-hover-text-red w3-text-green">Where Am I<br> <i class="fa fa-chevron-down w3-xlarge" ></i></button>
 							<div id="accWhere" class="w3-container w3-hide">
-								<h3>Coming Soon</h3>
-	  						<p class="w3-text-green">Coming Soon</p>
+								<h3 class="w3-text-white">Coming Soon</h3>
+	  						<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">Coming Soon</p>
 							</div>
 					</div>
 
@@ -133,10 +138,10 @@
 		</section>
 
 		<!-- SERVICES -->
-		<section id="services" class="section w3-animate-opacity w3-teal">
+		<section id="services" class="section w3-animate-opacity">
 			<div class="w3-container w3-center">
-				<i class="fa fa-cubes w3-xxlarge"></i>
-				<h2>Services</h2>
+				<i class="fa fa-cubes w3-xxlarge w3-text-white"></i>
+				<h2 class="w3-text-white">Services</h2>
 				<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">Coming Soon</p>
 			</div>
 		</section>
@@ -147,11 +152,11 @@
 		</section>
 
 		<!-- PORTFOLIO -->
-		<section id="portfolio" class="section w3-animate-opacity w3-white">
+		<section id="portfolio" class="section w3-animate-opacity">
 			<div class="w3-container w3-center">
 				<i class="fa fa-suitcase w3-xxlarge"></i>
 				<h2>Portfolio</h2>
-				<p class="w3-text-green">Coming Soon</p>
+				<p class="w3-text-green" style="text-shadow:2px 2px 2px #2F4F4F">Coming Soon</p>
 			</div>
 		</section>
 
@@ -161,57 +166,54 @@
 		</section>
 
 		<!-- CONTACT -->
-		<section id="contact" class="section w3-animate-opacity w3-black">
+		<section id="contact" class="section w3-animate-opacity">
 			<div class="w3-container w3-center">
-				<i class="fa fa-envelope w3-xxlarge"></i>
-				<h2>Contact</h2>
+				<i class="fa fa-envelope w3-xxlarge w3-text-white"></i>
+				<h2 class="w3-text-white">Contact</h2>
 				<p class="w3-text-green">Have a <span class="w3-text-red"> project</span>
 					/ <span class="w3-text-red">great idea</span> in mind ? want to talk about it ?</p>
 				<p class="w3-text-green">I'd <i class="fa fa-heart w3-text-red w3-xlarge"></i> that too, send me a message and I'll get in	<span class="w3-text-red"> touch </span>!
 				</p>
 
-				<form name="emailForm" action="https://formspree.io/info@andrearizzo.com.mt" onsubmit="return validateEmailForm(this)" method="POST" class="w3-container w3-card-4 w3-white w3-margin">
+				<form id="contactForm" name="emailForm" action="https://formspree.io/info@andrearizzo.com.mt" onsubmit="return validateEmailForm(this)" method="POST" class="w3-container w3-mobile w3-card-4 w3-margin">
 
 				<div class="w3-row w3-section">
 				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user w3-text-green"></i></div>
 				    <div class="w3-rest">
-				      <input id="name"class="w3-input w3-border w3-black w3-hover-text-black w3-hover-green" name="first" type="text" placeholder="First Name" oninput="setCustomValidity('')">
+				      <input id="name"class="w3-input w3-border-0 w3-black w3-hover-text-black w3-hover-green" name="first" type="text" placeholder="First Name" oninput="setCustomValidity('')">
 				    </div>
 				</div>
 
 				<div class="w3-row w3-section">
-				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user w3-text-white"></i></div>
+				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-icon-sign-blank"></i></div>
 				    <div class="w3-rest">
-				      <input class="w3-input w3-border w3-black w3-hover-text-black w3-hover-green" name="last" type="text" placeholder="Last Name" oninput="setCustomValidity('')">
+				      <input class="w3-input w3-border-0 w3-black w3-hover-text-black w3-hover-green" name="last" type="text" placeholder="Last Name" oninput="setCustomValidity('')">
 				    </div>
 				</div>
 
 				<div class="w3-row w3-section">
 				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o w3-text-green"></i></div>
 				    <div class="w3-rest">
-				      <input class="w3-input w3-border w3-black w3-hover-text-black w3-hover-green" name="_replyto" type="text" placeholder="Email" oninput="setCustomValidity('')">
+				      <input class="w3-input w3-border-0 w3-black w3-hover-text-black w3-hover-green" name="_replyto" type="text" placeholder="Email" oninput="setCustomValidity('')">
 				    </div>
 				</div>
 
 				<div class="w3-row w3-section">
 				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone w3-text-green"></i></div>
 				    <div class="w3-rest">
-				      <input class="w3-input w3-border w3-black w3-hover-text-black w3-hover-green" name="phone" type="text" placeholder="Phone" oninput="setCustomValidity('')">
+				      <input class="w3-input w3-border-0 w3-black w3-hover-text-black w3-hover-green" name="phone" type="text" placeholder="Phone" oninput="setCustomValidity('')">
 				    </div>
 				</div>
 
 				<div class="w3-row w3-section">
 				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil w3-text-green"></i></div>
 				    <div class="w3-rest">
-				      <textarea class="w3-input w3-border w3-black w3-hover-text-black w3-hover-green" style="resize: none" name="message" cols="40" rows="5" placeholder="Message" oninput="setCustomValidity('')"></textarea>
+				      <textarea class="w3-input w3-border-0 w3-black w3-hover-text-black w3-hover-green" style="resize: none" name="message" cols="40" rows="4" placeholder="Message" oninput="setCustomValidity('')"></textarea>
 				    </div>
 				</div>
 
 				<div class="w3-row w3-section" style="display: none;">
-				  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone w3-text-green"></i></div>
-				    <div class="w3-rest">
 				      <input id="ip" class="w3-input w3-border w3-black w3-hover-text-black w3-hover-green" name="ip" type="text">
-				    </div>
 				</div>
 
 				<!-- <button id="contactButton" class="w3-animate-opacity w3-button w3-text-teal w3-hover-none w3-hover-text-green" type="submit">
@@ -220,8 +222,8 @@
 					<i class="fa fa-arrow-circle-right w3-xxlarge"></i>
 				</button> -->
 
-				<button class="w3-button w3-text-teal w3-hover-none w3-hover-text-red btnReshape" type="submit"><i class="typed-cursor3 fa fa-arrow-circle-right w3-xxlarge"></i>
-					SEND <span class="w3-text-green">my message</span>  
+				<button class="w3-button w3-text-grey w3-hover-none w3-hover-text-green btnReshape" type="submit"><i class="typed-cursor3 fa fa-arrow-circle-right w3-xxlarge"></i>
+					SEND <span class="w3-text-red">my message</span>
 				</button>
 
 			</div>
@@ -237,16 +239,16 @@
 
 			<div id="footbar"class="w3-bar w3-center w3-black">
 
-				<hr>
+				<!-- <hr> -->
 
 				<span id="locationAndWeath" class="w3-bar-item w3-text-gray w3-hover-none w3-medium w3-left w3-mobile"></span>
 
-				<hr>
+				<!-- <hr> -->
 
-				<span id="" class="w3-bar-item w3-hover-none w3-hover-text-none w3-large w3-right w3-mobile">
+				<span id="icons_CpyRight" class="w3-bar-item w3-large w3-right w3-mobile w3-white">
 
-					<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-text-gray" style="font-size:28px"></i></a>
-					<a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram w3-text-gray" style="font-size:28px"></i></a>
+					<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-text-indigo w3-hover-text-grey" style="font-size:30px"></i></a>
+					<a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram w3-text-black w3-hover-text-grey" style="font-size:30px"></i></a>
 					Andrea Rizzo <i class="fa fa-copyright w3-small"></i> 2017
 
 				</span>
