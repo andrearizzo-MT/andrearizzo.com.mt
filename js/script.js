@@ -204,7 +204,7 @@ function getLocation(){
           document.forms["emailForm"]["ip"].value = locData.query;
 
           //FOOTER WEATHER CONDITIONS
-          locationAndWeath.innerHTML = '<span class="w3-text-green w3-large">IP: </span>' + locData.query + '<span> &nbsp </span>'
+          locationAndWeath.innerHTML = '<span class="w3-text-green w3-large">Your IP: </span>' + locData.query + '<span> &nbsp </span>'
           // + '<i class="fa fa-location-arrow w3-large w3-text-green">&nbsp</i>' + " " + locData.city + " - "  + locData.countryCode + '<span> &nbsp </span>'
           + '<span class="w3-text-green w3-large">Weather Conditions: </span>'
           + '<img src="http://openweathermap.org/img/w/' + weathData.weather[0].icon + '.png" style="width: 40px; height: 40px;">&nbsp'

@@ -18,13 +18,12 @@
 
 body {
   /* top, transparent red, faked with gradient */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  /* bottom, image */
-  url(../img/office-wallpaper-9.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/office-wallpaper-9.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
 }
 
 /* INDEX PAGE */
@@ -171,7 +170,7 @@ body {
 }
 
 #contact{
-  padding: 28px 0px;
+  padding: 25px 0px;
 }
 
 #contactForm{
@@ -235,7 +234,6 @@ body {
 
 #footbar{
   font-family: myAileronsFont;
-  height: 45px;
 }
 
 #locationAndWeath{
@@ -249,7 +247,7 @@ body {
 
 /*Mobile and smaller screens*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   /*body{
     margin-top: 200px;
   }*/
