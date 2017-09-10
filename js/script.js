@@ -11,10 +11,11 @@ function burgerFunction() {
 //ANDREA RIZZO NAME BAFFLE MATRIX STYLE
     var b = window.baffle('h1',
       {
-        characters: '▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒ AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz~!@#$%^&*()-+=[]{}|;:,./<>?',
-        speed: 80
+        // characters: '▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒ AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz~!@#$%^&*()-+=[]{}|;:,./<>?',
+        characters: '~!@#$%^&*()-+=[]{}|;:,./<>?AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz',
+        speed: 70
     });
-    b.start().once().reveal(1500, 1500);
+    b.start().once().reveal(2000, 2000);
 
 //TEXT TYPING TRANSITIONS
 document.addEventListener("DOMContentLoaded", function(){
@@ -43,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function(){
       // show cursor
       showCursor: true,
       // character for cursor
-      cursorChar: " " + '<i class="fa fa-terminal w3-xxlarge w3-text-yellow"></i>',
+      // cursorChar: " " + '<i class="fa fa-terminal w3-xxlarge w3-text-yellow"></i>',
+      cursorChar: "" + '<span style="color:yellow; font-weight:900">_<span>',
       // attribute to type (null == text)
       attr: null,
       // either html or text
@@ -204,9 +206,9 @@ function getLocation(){
           document.forms["emailForm"]["ip"].value = locData.query;
 
           //FOOTER WEATHER CONDITIONS
-          locationAndWeath.innerHTML = '<span class="w3-text-green w3-large">Your IP: </span>' + locData.query + '<span> &nbsp </span>'
+          locationAndWeath.innerHTML = '<span class="w3-text-green w3-large" style="font-family: myAileronsFont">User IP: </span>' + locData.query + '<span> &nbsp </span>'
           // + '<i class="fa fa-location-arrow w3-large w3-text-green">&nbsp</i>' + " " + locData.city + " - "  + locData.countryCode + '<span> &nbsp </span>'
-          + '<span class="w3-text-green w3-large">Weather Conditions: </span>'
+          + '<span class="w3-text-green w3-large" style="font-family: myAileronsFont">Weather:</span>'
           + '<img src="http://openweathermap.org/img/w/' + weathData.weather[0].icon + '.png" style="width: 40px; height: 40px;">&nbsp'
           + '<i class="wi wi-thermometer w3-text-red w3-xlarge">&nbsp</i>' + weathData.main.temp + '<i class="wi wi-celsius w3-text-red w3-xlarge"></i>' + '<span> &nbsp </span>'
           + '<i class="wi wi-strong-wind w3-text-red w3-xlarge">&nbsp</i>' + weathData.wind.speed + " m/s" + '<span> &nbsp </span>'

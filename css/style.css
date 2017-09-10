@@ -1,20 +1,46 @@
-/*FONTS WORKING WITH CRHOME ONLY*/
+/*CROSS BROWSER FONTS*/
 @font-face {
-  font-family: myAileronsFont;
-  src: url(../typefonts/Ailerons-Typeface.otf);
+    font-family: myAileronsFont;
+    src: url(../typefonts/Ailerons/Ailerons-Typeface.otf);
+    src: url(../typefonts/Ailerons/Ailerons-Typeface.eot?#iefix)
+             format('embedded-opentype'),
+         url(../typefonts/Ailerons/Ailerons-Typeface.woff) format('woff'),
+         url(../typefonts/Ailerons/Ailerons-Typeface.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: mySkyer-RegularFont;
+  src: url(../typefonts/Skyer/Skyer-Regular.otf);
+  src: url(../typefonts/Skyer/Skyer-Regular.eot?#iefix)
+           format('embedded-opentype'),
+       url(../typefonts/Skyer/Skyer-Regular.woff) format('woff'),
+       url(../typefonts/Skyer/Skyer-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: myTrackFont;
-  src: url(../typefonts/Track.otf);
+  src: url(../typefonts/Track/Track.otf);
+  src: url(../typefonts/Track/Track.eot?#iefix)
+           format('embedded-opentype'),
+       url(../typefonts/Track/Track.woff) format('woff'),
+       url(../typefonts/Track/Track.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: myCornerstoneFont;
-  src: url(../typefonts/Cornerstone.ttf);
+  font-family: myQuentinFont;
+  src: url(../typefonts/Quentin/Quentin.ttf);
+  src: url(../typefonts/Quentin/Quentin.eot?#iefix)
+           format('embedded-opentype'),
+       url(../typefonts/Quentin/Quentin.woff) format('woff'),
+       url(../typefonts/Quentin/Quentin.ttf) format('truetype');
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+/*@font-face {
+  font-family: myCornerstone;
+  src: url(../typefonts/Cornerstone.ttf);
+}*/
+
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);*/
 
 body {
   /* top, transparent red, faked with gradient */
@@ -50,35 +76,43 @@ body {
 
 .showcase {
   /*height: 600px;*/
-  margin-top: 25px;
-  padding: 75px 100px;
+  margin-top: 50px;
+  padding: 100px 100px;
   color: white;
 }
 
 .showcase h1{
-  font-size: 130px;
-  font-weight: 900;
-  font-family: myAileronsFont;
+  font-size: 150px;
+  font-weight: 0;
+  font-family: myQuentinFont;
   padding: 20px 0px;
 }
 
 .showcase hr{
   width:450px;
   margin: auto;
-  border-width: 5px;
+  border-width: 3px;
   border-color: red;
 }
 
 .showcase p {
   font-size: 35px;
-  font-family: myCornerstoneFont;
+  font-family: mySkyer-RegularFont;
   text-align: center;
-  padding: 20px 0px;
+  padding: 50px 0px;
+  background-color: rgba(0,0,0,0.3);
+  width:450px;
+  margin: auto;
+}
+
+#doubleDown {
+  font-size: 120px;
 }
 
 .typedElement{
   font-size: 35px;
-  font-family: myCornerstoneFont;
+  font-weight: 900;
+  font-family: mySkyer-RegularFont;
   text-align: center;
 }
 
@@ -125,17 +159,25 @@ body {
 }
 
 #getStarted, #portfolio{
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.6);
 }
 
 #about, #contact{
   background-color: rgba(0,0,0,0.3);
 }
 
+#name, #last, #email, #phone, #message{
+  background-color: rgba(0,0,0,0.4);
+}
+
+#accordions{
+  background-color: rgba(0,0,0,0);
+}
+
 #about button{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
-  font-family: myAileronsFont;
+  font-family: mySkyer-RegularFont;
 }
 
 #accWho, #accWhat, #accWhere {
@@ -149,7 +191,7 @@ body {
 
 .section{
   font-size: 20px;
-  font-family: myCornerstoneFont;
+  font-family: mySkyer-RegularFont;
   text-align: center;
   padding: 40px 0;
 }
@@ -170,7 +212,7 @@ body {
 }
 
 #contact{
-  padding: 25px 0px;
+  padding: 26px 0px;
 }
 
 #contactForm{
@@ -181,7 +223,7 @@ body {
 }
 
 .section form{
-  font-family: myAileronsFont;
+  font-family: mySkyer-RegularFont;
 }
 
 /*#contactButton{
@@ -211,7 +253,8 @@ body {
   /*font-weight: normal;*/
   /*font-family: 'Montserrat', sans-serif;*/
   font-size: 25px;
-  font-family: myCornerstoneFont;
+  font-family: mySkyer-RegularFont;
+  font-weight: 900;
   opacity: 0;
   -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
   transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
@@ -237,7 +280,7 @@ body {
 }
 
 #locationAndWeath{
-  font-family: myCornerstoneFont;
+  font-family: myTrackFont;
   padding: 0px 25px;
 }
 
@@ -254,33 +297,42 @@ body {
 
   .showcase{
     /*height: 750px;*/
-    padding: 100px 0;
+    padding: 30px 0;
   }
 
   .showcase h1{
     font-size: 80px;
     /*font-weight: 900;*/
-    font-family: myAileronsFont;
+    font-family: myQuentinFont;
     padding-bottom: 20px;
   }
 
   .showcase hr{
     width:325px;
     margin: auto;
-    border-width: 5px;
+    border-width: 3px;
     border-color: red;
   }
 
   .showcase p {
     font-size: 23px;
-    font-family: myCornerstoneFont;
+    font-family: mySkyer-RegularFont;
     text-align: center;
-    padding: 20px 0px;
+    paddingt: 25px 0px;
+    background-color: rgba(0,0,0,0.3);
+    width:325px;
+    margin: auto;
+  }
+
+  #doubleDown {
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .typedElement{
     font-size: 23px;
-    font-family: myCornerstoneFont;
+    font-family: mySkyer-RegularFont;
     text-align: center;
   }
 
@@ -306,7 +358,7 @@ body {
     font-weight: normal;
     /*font-family: 'Montserrat', sans-serif;*/
     font-size: 18px;
-    font-family: myCornerstoneFont;
+    font-family: mySkyer-RegularFont;
     opacity: 0;
     -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
     transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
@@ -324,11 +376,14 @@ body {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
   }
 
   #contact{
     padding: 35px 0px;
+  }
+
+  #formArea{
     padding-right: 30px;
   }
 
