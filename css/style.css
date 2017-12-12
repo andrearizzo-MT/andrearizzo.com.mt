@@ -275,8 +275,16 @@ body {
   /*text-decoration: underline;*/
 }
 
+footer{
+  height: 48px;
+}
+
 #footbar{
   font-family: myAileronsFont;
+  position: fixed;
+	display: block;
+	bottom: 0;
+	width: 100%;
 }
 
 #locationAndWeath{
@@ -395,6 +403,7 @@ body {
   #footbar{
     font-family: myAileronsFont;
     height: auto;
+    position: relative;
   }
 
   #locationAndWeath{
