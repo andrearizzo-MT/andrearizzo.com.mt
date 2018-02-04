@@ -13,14 +13,14 @@ function burgerFunction() {
       {
         // characters: '▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒▓░█ ▒░▒▓░ ▒░░▓> ▒█▓ █░><▒ █▒█▓ ▓░/ ▓▓/█ █▓▒ AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz~!@#$%^&*()-+=[]{}|;:,./<>?',
         characters: '~!@#$%^&*()-+=[]{}|;:,./<>?AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz',
-        speed: 70
+        speed: 60
     });
     b.start().once().reveal(2000, 2000);
 
 //TEXT TYPING TRANSITIONS
 document.addEventListener("DOMContentLoaded", function(){
   Typed.new(".typedElement", {
-      strings: ["Software Developer","CAD Designer"],
+      strings: ["Web Developer", "Software Developer","Arch. Draftsman","CAD Designer"],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function(){
       // time before typing starts
       startDelay: 2800,
       // backspacing speed
-      backSpeed: 30,
+      backSpeed: 5,
       // shuffle the strings
       shuffle: false,
       // time before backspacing
-      backDelay: 1200,
+      backDelay: 3000,
       // Fade out instead of backspace (must use CSS class)
       fadeOut: false,
       fadeOutClass: 'typed-fade-out',
@@ -208,7 +208,7 @@ function getLocation(){
           //FOOTER WEATHER CONDITIONS
           locationAndWeath.innerHTML = '<span class="w3-text-green w3-large" style="font-family: myAileronsFont">User IP: </span>' + locData.query + '<span> &nbsp </span>'
           // + '<i class="fa fa-location-arrow w3-large w3-text-green">&nbsp</i>' + " " + locData.city + " - "  + locData.countryCode + '<span> &nbsp </span>'
-          + '<span class="w3-text-green w3-large" style="font-family: myAileronsFont">Weather:</span>'
+          + '<span class="w3-text-green w3-large" style="font-family: myAileronsFont">Weather Conditions:</span>'
           + '<img src="http://openweathermap.org/img/w/' + weathData.weather[0].icon + '.png" style="width: 40px; height: 40px;">&nbsp'
           + '<i class="wi wi-thermometer w3-text-red w3-xlarge">&nbsp</i>' + weathData.main.temp + '<i class="wi wi-celsius w3-text-red w3-xlarge"></i>' + '<span> &nbsp </span>'
           + '<i class="wi wi-strong-wind w3-text-red w3-xlarge">&nbsp</i>' + weathData.wind.speed + " m/s" + '<span> &nbsp </span>'
